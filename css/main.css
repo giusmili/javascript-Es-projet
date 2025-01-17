@@ -1,0 +1,18 @@
+/* RESET CSS */
+html{
+    font-size: 62.5%; /* 16 * 62.5 = 1.000*/
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.6rem sans-serif;
+}
+h1,h2,h3,p,figure,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* theme css */
