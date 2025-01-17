@@ -9,10 +9,58 @@ html{
 
 body {
     font: 1.6rem sans-serif;
+    margin: 0;
 }
 h1,h2,h3,p,figure,ol,ul{
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    font-weight: normal;
 }
-
+a{
+    text-decoration: none;
+    color: #222;
+}
 /* theme css */
+
+header{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between; /* espacemet au mileu entre deux éléments */
+    border-bottom: .1rem solid transparent;
+    box-shadow: 0 0 2rem #cecece;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around; /* espacemet autour les éléments*/
+    align-items: center;
+
+}
+header nav ul li{
+    width: 20rem;
+    text-align: center;
+    line-height: 4rem;
+    margin-right: 1rem;
+    /* background-color: #ccc; */
+    border-radius: .4rem;
+    line-height: 5rem;
+    border: solid .1rem #222;
+}
+header nav ul li a{
+    display: inline-block;
+    width: 100%;
+}
+header h1{
+    padding-left: 1rem;
+}
+article{
+    position: relative;
+    max-width: 80rem;
+    border: solid .1rem #222;
+    margin: 9rem auto 5rem;
+
+}
+footer *{
+    text-align: center;
+    
+}
