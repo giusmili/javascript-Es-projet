@@ -74,6 +74,11 @@ nav ul li{
     background-color: var(--input-bgcolor);
     line-height: 4.5rem;
     border-radius: .4rem;
+    transition: all .6s ease-in-out;
+}
+nav ul li:hover{
+    background-color: #ccc;
+    color: #222;
 }
 nav ul li a{
     display: block;
@@ -150,6 +155,8 @@ figure img{
     height: 60%;
     object-fit: cover;
     vertical-align: middle;
+    filter: drop-shadow(0 0 1rem #e82f8c);
+    filter: grayscale(50%);
 }
 footer *{
     text-align: center;
