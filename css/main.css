@@ -80,6 +80,7 @@ nav ul li a{
 
 main{
     display: flex;
+    flex-flow: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -89,7 +90,7 @@ main{
 article{
     max-width: 50rem;
     background-color: var(--input-bgcolor);
-    padding: 4rem;
+    padding: 2rem;
     border-radius: 2rem;
     border: solid .4rem var(--input-bgcolor-light);
     aspect-ratio: 1 / 1;
