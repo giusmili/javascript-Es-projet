@@ -6,6 +6,7 @@ console.info(contents);
 console.error(contents);
 const parent= document.querySelector("button");
 console.log(parent);
+
 parent.addEventListener("click", () => {
     console.log("ok");
 });
