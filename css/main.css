@@ -1,4 +1,5 @@
 /* RESET CSS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 html{
     font-size: 62.5%; /* 16 * 62.5 = 1.000*/
 }
@@ -10,7 +11,7 @@ html{
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font: 1.6rem sans-serif;
+    font: 1.6rem "Open Sans",sans-serif;
     line-height: 1.6;
     letter-spacing: .1rem;
     min-height: 100svh;
@@ -46,7 +47,7 @@ header{
 }
 header h1{
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 400;
     
 }
 /* menu nav ul */
@@ -54,6 +55,9 @@ header h1{
     --bg-color: #2b2a33;
     --input-bgcolor: #42414d;
     --input-bgcolor-light: #7e7e80;
+    --button-theme-alert: #dd0e62;
+    --button-theme-primary: rgba(9, 132, 227,1.0);
+    --button-theme-info: rgba(108, 92, 231,1.0);
 
 }
 nav ul{
@@ -85,6 +89,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    
 
 }
 article{
@@ -93,7 +98,8 @@ article{
     padding: 2rem;
     border-radius: 2rem;
     border: solid .4rem var(--input-bgcolor-light);
-    aspect-ratio: 1 / 1;
+    height: 40rem;
+    
 
 }
 article p{
@@ -101,11 +107,49 @@ article p{
 }
 article h2{
     font-size: xx-large;
-    font-weight: normal;
+    font-weight: 400;
     text-align: center;
 }
 .button-default{
+   color: #222;
+    background-color: #ccc;
+    width: max-content;
+    text-align: center;
+    line-height: 3.5rem;    
+    padding: 0 2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+.button-theme-alert{
+    background: var(--button-theme-alert);
+    color: #fff;
+}
+.button-theme-primary{
+    background-color: var(--button-theme-primary);
+    color: #fff;
+}
+.button-theme-info{
+    background-color: var(--button-theme-info);
+    color: #fff;
+}
 
+figure{
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    margin: 5rem auto;
+}
+figure h2{
+    font-size: xx-large;
+    font-weight: 500;
+
+}
+figure img{
+    display: inline-block;
+    width: 50%;
+    height: 60%;
+    object-fit: cover;
+    vertical-align: middle;
 }
 footer *{
     text-align: center;
