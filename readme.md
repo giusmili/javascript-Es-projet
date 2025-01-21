@@ -64,6 +64,7 @@ footer *{
         ];
 
         buttons.forEach((button, index) => {
+        
             console.log(button);
 
             button.addEventListener("click", () => {
