@@ -53,3 +53,26 @@ footer *{
     text-align: center;
 }
 ```
+## Evenemment JS
+```js
+ const buttons = document.querySelectorAll("button");
+
+        const links = [
+            "https://www.google.com",
+            "https://www.wikipedia.com",
+            "https://www.lemonde.fr"
+        ];
+
+        buttons.forEach((button, index) => {
+            console.log(button);
+
+            button.addEventListener("click", () => {
+                if (index < links.length) {
+                    window.location.href = links[index];
+                } else {
+                    window.alert("No link associated with this button");
+                }
+            });
+        });
+
+```
