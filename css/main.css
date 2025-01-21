@@ -100,7 +100,7 @@ article{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    width: calc(100% / 3  - 2rem);
+    width: calc(100% / 3 - 2rem); /* eviter les données fixes */
     flex-wrap: wrap;
     background-color: var(--input-bgcolor);
     padding: 2rem;
