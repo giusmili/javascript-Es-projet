@@ -27,9 +27,17 @@ a{
     text-decoration: none;
     color: #222;
 }
+button{
+    padding: 0;
+    background-color: transparent;
+    font-size: inherit;
+    border: 0;
+    cursor: pointer;
+}
 /* theme css */
 
 header{
+    background-color: #74b9ff;
     padding: 3rem 0;
     display: flex;
     justify-content: space-between; /* espacemet au mileu entre deux éléments */
@@ -42,7 +50,7 @@ header nav ul{
     align-items: center;
 
 }
-header nav ul li{
+header nav ul li, button{
     width: 20rem;
     text-align: center;
     line-height: 4rem;
@@ -55,11 +63,20 @@ header nav ul li{
 header nav ul li a{
     display: inline-block;
     width: 100%;
+    transition: all .6s ease-in-out;
+}
+header nav ul li:hover a{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 header h1{
     padding-left: 1rem;
+    font-weight: 400;
 }
 figure{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,  -50%);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -84,7 +101,18 @@ figure .picture img{
     width: 100%;
     object-fit: cover;
     vertical-align: middle;
+    filter: grayscale(50%);
 
+}
+.btn-default{
+    margin: 1rem 0;
+    width: max-content;
+    line-height: 3.5rem;
+    padding: 0 1rem;
+    transition: all .6s ease-in-out;
+}
+.btn-default:hover{
+    background-color: #74b9ff;
 }
 footer *{
     text-align: center;
