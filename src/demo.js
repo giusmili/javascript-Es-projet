@@ -6,32 +6,33 @@ console.info(contents)
 console.error(contents)
 // bouton event
 
-/* const parent = document.querySelectorAll("button")
+const parent = document.querySelectorAll("button")
 for(let rows of parent){
     console.log(rows)
     rows.addEventListener("click",()=>{
         alert("ok")
     })
-} */
-/* parent.addEventListener("click",()=>{
+} 
+parent.addEventListener("click",()=>{
 console.log("ok")
-}) */
-const btn = document.querySelectorAll("button")
+})
 
-const links = [
-    "https://www.google.com",
-    "https://www.wikipedia.com",
-    "https://www.lemonde.fr"
-];
+/* const btns = document.querySelectorAll("button");
 
-buttons.forEach((btn, index) => {
-    console.log(btn);
+        const links = [
+            "https://www.google.com",
+            "https://www.wikipedia.com",
+            "https://www.lemonde.fr"
+        ];
 
-    button.addEventListener("click", () => {
-        if (index < links.length) {
-            window.location.href = links[index];
-        } else {
-            window.alert("No link associated with this button");
-        }
-    });
-});
+        btns.forEach((button, index) => {
+            console.log(button);
+
+            button.addEventListener("click", () => {
+                if (index < links.length) {
+                    window.location.href = links[index];
+                } else {
+                    window.alert("No link associated with this button");
+                }
+            });
+        }); */
