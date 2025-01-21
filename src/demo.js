@@ -5,8 +5,14 @@ console.log(contents)
 console.info(contents)
 console.error(contents)
 // bouton event
-const parent = document.querySelector("button")
-console.log(parent)
-parent.addEventListener("click",()=>{
+
+const parent = document.querySelectorAll("button")
+for(let rows of parent){
+    console.log(rows)
+    rows.addEventListener("click",()=>{
+        alert("ok")
+    })
+}
+/* parent.addEventListener("click",()=>{
 console.log("ok")
-})
+}) */
