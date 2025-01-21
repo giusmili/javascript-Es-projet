@@ -88,23 +88,25 @@ nav ul li a{
 }
 
 main{
+  /* modifier les propriétés */
     display: flex;
-    flex-flow: wrap;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
-    
 
 }
 article{
     display: flex;
-    flex-direction: column;
-    max-width: 50rem;
+    flex-direction: row;
+    justify-content:space-around;
+    width: calc(100% / 3  - 2rem);
+    flex-wrap: wrap;
     background-color: var(--input-bgcolor);
     padding: 2rem;
     border-radius: 2rem;
     border: solid .4rem var(--input-bgcolor-light);
+    aspect-ratio: 16 / 9;
     
     
 
