@@ -1,0 +1,71 @@
+/* RESET CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 62.5%; /* 16 * 62.5 = 1.000*/
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+    font: 1.6rem "Montserrat", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+}
+h1,h2,h3,p,figure,ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+button{
+    padding: 0;
+    background-color: transparent;
+    font-size: inherit;
+    border: 0;
+    cursor: pointer;
+}
+strong{
+    font-weight: 600;
+}
+
+/* 
+
+=====================
+      THEME CSS
+=====================
+
+*/
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30vh;
+    margin: 5rem auto;
+    justify-content: center;
+    align-items: center;
+}
+.user-info figcaption * {
+    text-align: center;
+}
+.user-info img{
+    clip-path: circle(50%);
+}
+header h1{
+    text-align: center;
+    line-height: 8rem;
+}
+footer *{
+    text-align: center;
+    font-size: small;
+}
