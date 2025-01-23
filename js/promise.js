@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", e => {
     e.preventDefault();
+
+    const el = document.getElementsByTagName("h1")[0]
+     el.addEventListener("click", function(){
+        this.innerText = "Cours js : ES6+"
+     })
+
     /* URL de l'API GitHub pour récupérer les informations sur un utilisateur OPS */
     const url = 'https://api.github.com/users/giusmili';
 
