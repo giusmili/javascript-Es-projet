@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", e => {
     const links = ["https://www.wikipedia.org"]
 
     btn.addEventListener("click",()=>{
-    window.open(links[0]) /* location.href="" */
+        window.open(links[0]) /* location.href="" */
     })
 })
