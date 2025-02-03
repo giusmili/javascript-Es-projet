@@ -6,6 +6,9 @@ console.info(contents)
 console.error(contents)
 // bouton event
 
+const elementsTitle = document.querySelector("title")
+console.log(elementsTitle.innerText = "ClassRoom ES6+")
+
 const parent = document.querySelectorAll("button")
 for(let rows of parent){
     console.log(rows)
