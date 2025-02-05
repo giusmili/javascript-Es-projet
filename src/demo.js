@@ -9,18 +9,18 @@ console.error(contents)
 const elementsTitle = document.querySelector("title")
 console.log(elementsTitle.innerText = "ClassRoom ES6+")
 
-const parent = document.querySelectorAll("button")
-for(let rows of parent){
+// const parent = document.querySelectorAll("button")
+/* for(let rows of parent){
     console.log(rows)
     rows.addEventListener("click",()=>{
         alert("ok")
     })
-} 
-parent.addEventListener("click",()=>{
+}  */
+/* parent.addEventListener("click",()=>{
 console.log("ok")
-})
+}) */
 
-/* const btns = document.querySelectorAll("button");
+const btns = document.querySelectorAll("button");
 
         const links = [
             "https://www.google.com",
@@ -38,4 +38,4 @@ console.log("ok")
                     window.alert("No link associated with this button");
                 }
             });
-        }); */
+        });
